@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import CrudProducts from "../pages/CrudProducts";
 import MarketPlaceProducts from "../pages/MarketPlaceProducts";
+import CrudUsuarios from "../pages/CrudUsuarios";
 
 
 const Routing =()=> {
@@ -9,7 +9,8 @@ const Routing =()=> {
     return(
         <Router>
             <Routes>
-                <Route path="/productos" element={<CrudProducts/>}/>
+                 <Route path="/" element={<CrudUsuarios />} />
+                <Route path="/productos" element={<CrudUsuarios/>}/>
                  <Route path="/market" element={<MarketPlaceProducts/>}/>
             </Routes>
         </Router>

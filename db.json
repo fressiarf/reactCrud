@@ -1,29 +1,22 @@
 {
-  "productos": [
+  "usuarios": [
     {
-      "id": "01dc",
-      "producto": "Arroz",
-      "detalle": "granos",
-      "precio": "5000"
+      "id": "fdca",
+      "nombre": "Fressia",
+      "contra": "123456",
+      "correo": "friveraffwd@gmail.com"
     },
     {
-      "id": "fb54",
-      "producto": "Frijoles",
-      "detalle": "Granos",
-      "precio": "3000"
+      "id": "e236",
+      "nombre": "Naho",
+      "contra": "1234567",
+      "correo": "naho@gmail.com"
     },
     {
-      "id": "93ba",
-      "producto": "Mantequilla",
-      "detalle": "Lacteos",
-      "precio": "500"
-    },
-    {
-      "id": "ce2c",
-      "producto": "Jabon FAB",
-      "detalle": "Higiene",
-      "precio": "2000"
+      "id": "1669",
+      "nombre": "Errol",
+      "contra": "2020",
+      "correo": "errol@gmail.com"
     }
   ]
- 
 }

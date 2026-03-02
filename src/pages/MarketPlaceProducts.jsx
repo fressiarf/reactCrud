@@ -1,5 +1,5 @@
 import React from 'react'
-import MostrarProducts from '../components/MostrarProducts'
+import MostrarProducts from '../components/MostrarUsuario'
 
 
 function MarketPlaceProducts() {

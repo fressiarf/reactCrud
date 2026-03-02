@@ -1,21 +1,21 @@
 //GET USUARIOS funcion que consulta al endpoint a traves de un fetch,conuslta al API al Endpoint
 
 
-async function getProductos() {
+async function getUsuarios() {
 
     try {
 
-        const respuestaServidor = await fetch("http://localhost:3000/productos")
+        const respuestaServidor = await fetch("http://localhost:3001/usuarios")
       
         
         const datosProductos= await respuestaServidor.json();
    
         
-        return datosProductos;
+        return datosUsuarios;
         
     } catch (error) {
         
-        console.error("Error al obtener los productos", error);
+        console.error("Error al obtener los usuarios", error);
     }
 
 
@@ -25,14 +25,14 @@ async function getProductos() {
 
 
 
-//POST USUARIOS AQUI S EVA A CREAR LA FUNCION PARA GUARDAR UN NUEVO USUARIO
+//POST USUARIOS AQUI SE VA A CREAR LA FUNCION PARA GUARDAR UN NUEVO USUARIO
 
 
-async function postProductos(producto){
+async function postUsuarios(producto){
 
        try {
 
-        const respuesta = await fetch("http://localhost:3000/productos",{
+        const respuesta = await fetch("http://localhost:3001/usuarios",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -43,11 +43,11 @@ async function postProductos(producto){
 
         const datosProducto= await respuesta.json();
 
-        return datosProducto;
+        return datosUsuarios;
         
     } catch (error) {
         
-        console.error("Error al obtener los producto", error);
+        console.error("Error al obtener los usuarios", error);
     }
 
 
@@ -110,7 +110,7 @@ async function deleteUsuarios(id){
 
 
 
-export default {postProductos,getProductos,putUsuarios,deleteUsuarios}
+export default {postUsuarios,getUsuarios,putUsuarios,deleteUsuarios}
 
 
 
