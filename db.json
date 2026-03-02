@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "id": "01dc",
+      "producto": "Arroz",
+      "detalle": "granos",
+      "precio": "5000"
+    },
+    {
+      "id": "fb54",
+      "producto": "Frijoles",
+      "detalle": "Granos",
+      "precio": "3000"
+    },
+    {
+      "id": "93ba",
+      "producto": "Mantequilla",
+      "detalle": "Lacteos",
+      "precio": "500"
+    },
+    {
+      "id": "ce2c",
+      "producto": "Jabon FAB",
+      "detalle": "Higiene",
+      "precio": "2000"
+    }
+  ]
+ 
+}
