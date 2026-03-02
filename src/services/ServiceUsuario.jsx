@@ -8,7 +8,7 @@ async function getUsuarios() {
         const respuestaServidor = await fetch("http://localhost:3001/usuarios")
       
         
-        const datosProductos= await respuestaServidor.json();
+        const datosUsuarios= await respuestaServidor.json();
    
         
         return datosUsuarios;
@@ -41,7 +41,7 @@ async function postUsuarios(producto){
 
         })
 
-        const datosProducto= await respuesta.json();
+        const datosUsuarios= await respuesta.json();
 
         return datosUsuarios;
         
@@ -49,9 +49,6 @@ async function postUsuarios(producto){
         
         console.error("Error al obtener los usuarios", error);
     }
-
-
-
 }
 
 

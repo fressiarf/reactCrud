@@ -17,6 +17,60 @@
       "nombre": "Errol",
       "contra": "2020",
       "correo": "errol@gmail.com"
+    },
+    {
+      "id": "cb1a",
+      "nombre": "Andres",
+      "contra": "3030",
+      "correo": "andres@gmail.com"
+    },
+    {
+      "id": "6ac9",
+      "nombre": "Sarai",
+      "contra": "4040",
+      "correo": "sarai@gmail.com"
+    },
+    {
+      "id": "1de4",
+      "nombre": "Chris",
+      "contra": "5050",
+      "correo": "chris@gmail.com"
+    },
+    {
+      "id": "7126",
+      "nombre": "Steven",
+      "contra": "60606",
+      "correo": "steven@gmail.com"
+    },
+    {
+      "id": "280a",
+      "nombre": "Sol",
+      "contra": "3037",
+      "correo": "sol@gmail.com"
+    },
+    {
+      "id": "f6b2",
+      "nombre": "Mariel",
+      "contra": "7070",
+      "correo": "mariel@gmail.com"
+    },
+    {
+      "id": "ec4e",
+      "nombre": "Nelson",
+      "contra": "8080",
+      "correo": "nelson@gmail.com"
+    },
+    {
+      "id": "c4eb",
+      "nombre": "Denji",
+      "contra": "9090",
+      "correo": "denji@gmail.com"
+    },
+    {
+      "id": "c59b",
+      "nombre": "frefre",
+      "contra": "123456",
+      "correo": "fre@gmail.com"
     }
   ]
 }
