@@ -1,34 +1,18 @@
 {
   "usuarios": [
     {
-      "id": "ec44",
-      "nombre": "Andres",
-      "contra": "3030",
-      "correo": "andres@gmail.com"
-    },
-    {
-      "id": "822d",
-      "nombre": "Errol",
-      "contra": "3030",
-      "correo": "errol@gmail.com"
-    },
-    {
-      "id": "40c2",
-      "nombre": "sarai",
-      "contra": "3030",
-      "correo": "sarai@gmail.com"
-    },
-    {
-      "id": "b35f",
-      "nombre": "Chris",
+      "id": "f1a2",
+      "nombre": "Fressia Rivera",
       "contra": "2020",
-      "correo": "chris@gmail.com"
+      "correo": "friveraffwd@gmail.com",
+      "rol": "Admin"
     },
     {
-      "id": "ee60",
-      "nombre": "sol",
-      "contra": "2020",
-      "correo": "sol@gmail.com"
+      "id": "936e",
+      "nombre": "Errrol",
+      "contra": "3030",
+      "correo": "errol@gmail.com",
+      "rol": "usuario"
     }
   ]
 }

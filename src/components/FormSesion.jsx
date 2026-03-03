@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 import ServiceUsuario from '../services/ServiceUsuario'
+import "../style/login.css"
 import { useNavigate } from "react-router-dom"
 
 function FormSesion() {
@@ -8,7 +9,7 @@ function FormSesion() {
   const [contraLogin, setContraLogin] = useState("")
   const [correoLogin, setCorreoLogin] = useState("")
   const navigate = useNavigate()
-  const [cerrar, setCerrar] = useState("Cerrar Sesion")
+
 
   async function loginUsuario() {
 
@@ -67,7 +68,7 @@ function FormSesion() {
  
 
   return (
-    <div>
+    <div className='formLogin'>
       <h2>Inicio de Sesion</h2>
 
       <h4>Correo</h4>
@@ -80,7 +81,7 @@ function FormSesion() {
         <button onClick={regirigirAdmin}>¿No tienes una cuenta?</button>
       </div>
 
-      <button value={cerrar} onChange={(evento) => setCerrar(evento.target.value)}>Cerrar Sesion</button>
+     
     </div>
   )
 }

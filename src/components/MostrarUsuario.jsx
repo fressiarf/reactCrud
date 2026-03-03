@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import ServiceProducts from '../services/ServiceUsuario'
+import "../style/paginaAdmin.css"
+
 
 function MostrarUsuario() {
 
   const [usuarios, setUsuario] = useState([])
+  
 
   useEffect(() => {
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 import ServiceUsuario from '../services/ServiceUsuario'
+import "../style/register.css"
 import { useNavigate  } from "react-router-dom"
 
 function FormRegistro() {
@@ -23,13 +24,29 @@ function FormRegistro() {
             return;
 
         } else { console.log(nombreCompleto, contraUsuario, correoUsuario); }
+        let usuarioAlmacenado = {}
 
-        const objUsuario = {
+        const datoGuardar = await ServiceUsuario.getUsuarios()
+
+        if (datoGuardar.length  === 0) {
+            const objUsuario = {
             nombre: nombreCompleto,
             contra: contraUsuario,
-            correo: correoUsuario
+            correo: correoUsuario,
+            rol: "Admin"
         }
-        const usuarioAlmacenado = await ServiceUsuario.postUsuarios(objUsuario)
+            usuarioAlmacenado = await ServiceUsuario.postUsuarios(objUsuario)
+            
+        } else {
+            const objUsuario = {
+            nombre: nombreCompleto,
+            contra: contraUsuario,
+            correo: correoUsuario,
+            rol: "usuario"
+
+        }
+            usuarioAlmacenado = await ServiceUsuario.postUsuarios(objUsuario)
+        }
         if (usuarioAlmacenado) {
             Swal.fire({
                 title: '¡Éxito!',

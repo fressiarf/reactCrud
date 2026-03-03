@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FormRegistro from '../components/FormRegistro'
+import FormRegistro from '../components/FormRegistro.jsx'
 
 function CrudUsuarios() {
 
