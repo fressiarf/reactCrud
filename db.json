@@ -1,76 +1,34 @@
 {
   "usuarios": [
     {
-      "id": "fdca",
-      "nombre": "Fressia",
-      "contra": "123456",
-      "correo": "friveraffwd@gmail.com"
-    },
-    {
-      "id": "e236",
-      "nombre": "Naho",
-      "contra": "1234567",
-      "correo": "naho@gmail.com"
-    },
-    {
-      "id": "1669",
-      "nombre": "Errol",
-      "contra": "2020",
-      "correo": "errol@gmail.com"
-    },
-    {
-      "id": "cb1a",
+      "id": "ec44",
       "nombre": "Andres",
       "contra": "3030",
       "correo": "andres@gmail.com"
     },
     {
-      "id": "6ac9",
-      "nombre": "Sarai",
-      "contra": "4040",
+      "id": "822d",
+      "nombre": "Errol",
+      "contra": "3030",
+      "correo": "errol@gmail.com"
+    },
+    {
+      "id": "40c2",
+      "nombre": "sarai",
+      "contra": "3030",
       "correo": "sarai@gmail.com"
     },
     {
-      "id": "1de4",
+      "id": "b35f",
       "nombre": "Chris",
-      "contra": "5050",
+      "contra": "2020",
       "correo": "chris@gmail.com"
     },
     {
-      "id": "7126",
-      "nombre": "Steven",
-      "contra": "60606",
-      "correo": "steven@gmail.com"
-    },
-    {
-      "id": "280a",
-      "nombre": "Sol",
-      "contra": "3037",
+      "id": "ee60",
+      "nombre": "sol",
+      "contra": "2020",
       "correo": "sol@gmail.com"
-    },
-    {
-      "id": "f6b2",
-      "nombre": "Mariel",
-      "contra": "7070",
-      "correo": "mariel@gmail.com"
-    },
-    {
-      "id": "ec4e",
-      "nombre": "Nelson",
-      "contra": "8080",
-      "correo": "nelson@gmail.com"
-    },
-    {
-      "id": "c4eb",
-      "nombre": "Denji",
-      "contra": "9090",
-      "correo": "denji@gmail.com"
-    },
-    {
-      "id": "c59b",
-      "nombre": "frefre",
-      "contra": "123456",
-      "correo": "fre@gmail.com"
     }
   ]
 }

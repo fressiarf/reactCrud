@@ -4,35 +4,35 @@ import ServiceProducts from '../services/ServiceUsuario'
 
 function MostrarUsuario() {
 
-    const [usuarios,setProductos]=useState([])
+  const [usuarios, setUsuario] = useState([])
 
-    useEffect(()=>{
+  useEffect(() => {
 
-       async function cargarUsuario() {
-            
-            const dataUsuarios = await ServiceProducts.getProductos()
+    async function cargarUsuario() {
 
-            setProductos(dataUsuarios)
-        }
-        cargarUsuario()
-    },[])
+      const dataUsuarios = await ServiceProducts.getUsuarios()
+
+      setUsuario(dataUsuarios)
+    }
+    cargarUsuario()
+  }, [])
 
   return (
     <div>
-         
-      {usuarios.map((usuario)=>
 
-      <div key={usuario.id}>
+      {usuarios.map((usuario) =>
 
-        <p>{usuario.usuario}</p>
-        <input type="text" />
-        <button>Editar</button>
-        <button>Eliminar</button>
-        <p>{usuario.contra}</p>
-        <p>{usuario.correo}</p>
-      </div>
-         
-    )}
+        <div key={usuario.id}>
+
+          <p>{usuario.nombre}</p>
+          <p>{usuario.contra}</p>
+          <p>{usuario.correo}</p>
+          <input type="text" />
+          <button>Editar</button>
+          <button>Eliminar</button>
+        </div>
+
+      )}
 
     </div>
   )

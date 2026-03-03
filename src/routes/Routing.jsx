@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import MarketPlaceProducts from "../pages/MarketPlaceProducts";
+import PagAdmin from "../pages/PagAdmin";
 import CrudUsuarios from "../pages/CrudUsuarios";
-
+import FormSesion from "../components/FormSesion";
 
 const Routing =()=> {
 
@@ -10,8 +10,9 @@ const Routing =()=> {
         <Router>
             <Routes>
                  <Route path="/" element={<CrudUsuarios />} />
-                <Route path="/productos" element={<CrudUsuarios/>}/>
-                 <Route path="/market" element={<MarketPlaceProducts/>}/>
+                <Route path="/registro" element={<CrudUsuarios/>}/>
+                 <Route path="/admin" element={<PagAdmin/>}/>
+                 <Route path="/login" element={<FormSesion/>}/>
             </Routes>
         </Router>
 

@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 import ServiceUsuario from '../services/ServiceUsuario'
-import { Link } from "react-router-dom"
+import { useNavigate  } from "react-router-dom"
 
 function FormRegistro() {
+
+ const navigate = useNavigate();
 
     const [nombreCompleto, setNombreUsuario] = useState("")
     const [contraUsuario, setContraUsuario] = useState("")
@@ -34,15 +36,22 @@ function FormRegistro() {
                 text: 'La operación se realizó correctamente',
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
-            }) 
+            }) .then(() => {
+        navigate('/login') 
+    })
+             
         }
 
         setNombreUsuario("")
         setContraUsuario("")
         setCorreoUsuario("")
     }
+
+     function irInicioSesion () {
+     navigate('/login')
+  }
     return (
-        <div>
+        <div className='formRegistro'>
 
             <h2>Registro</h2>
 
@@ -52,13 +61,16 @@ function FormRegistro() {
             <input type="email" value={correoUsuario} onChange={(evento) => setCorreoUsuario(evento.target.value)} />
             <h4 >Contraseña</h4>
             <input type="password" value={contraUsuario} onChange={(evento) => setContraUsuario(evento.target.value)} />
-
-            <button onClick={registroUsuario}>Registrarse</button>
+            <div>
+                <button onClick={registroUsuario}>Registrarse</button>
+                <button onClick={irInicioSesion}>¿Ya tienes una cuenta?</button>
+            </div>
+            
 
 
 
             <div>
-
+                
                 {/* esto es para redirigir a otra pestaña */}
                 {/*   <Link target='_blank' to="/market">Ir al market</Link> */}
 

@@ -28,7 +28,7 @@ async function getUsuarios() {
 //POST USUARIOS AQUI SE VA A CREAR LA FUNCION PARA GUARDAR UN NUEVO USUARIO
 
 
-async function postUsuarios(producto){
+async function postUsuarios(usuario){
 
        try {
 
@@ -37,7 +37,7 @@ async function postUsuarios(producto){
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify(producto)
+            body:JSON.stringify(usuario)
 
         })
 
